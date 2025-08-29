@@ -5,3 +5,15 @@
 notebooks/*/cache/
 
 .ipynb_checkpoints/
+# Jupyter
+**/.ipynb_checkpoints/
+# Caches locales de notebooks
+notebooks/47tuc/cache/
+# Evitar data temporaria debajo de notebooks (la canónica vive en data/47tuc_dp1/)
+notebooks/47tuc/data/
+# Jupyter
+**/.ipynb_checkpoints/
+# Caches locales de notebooks
+notebooks/47tuc/cache/
+# Evitar data temporaria debajo de notebooks (la canónica vive en data/47tuc_dp1/)
+notebooks/47tuc/data/
