@@ -18,3 +18,7 @@
 **Agradecimientos.** Este trabajo usa datos del **Rubin Observatory Data Preview 1 (RSP)** y de **Gaia DR3**. Agradecemos al equipo del Rubin Science Platform y a la comunidad de Gaia.
 
 **Autor de correspondencia:** Marcelo Reyes (independiente).  
+
+**Métricas (JSON).**  
+N = 1 113; P50 = 0.051″; **P68 = 0.053″**; P95 = 0.116″.  
+El JSON reproducible queda en `data/47tuc_dp1/rnA_metrics.json`.
