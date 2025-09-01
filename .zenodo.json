@@ -2,10 +2,21 @@
   "title": "RN-A — Astrometry in 47 Tuc with Rubin DP1 (ComCam)",
   "upload_type": "software",
   "creators": [
-    { "name": "Reyes, Marcelo" }
+    {
+      "name": "Reyes, Marcelo",
+      "orcid": "0000-0000-0000-0000",
+      "affiliation": "Independiente"
+    }
   ],
   "description": "Histogram of Rubin×Gaia separations in 47 Tuc (DP1) and P50/P68/P95 with bootstrap CIs. Derived Parquet/JSON, figure and notebook. No raw DP1 images.",
-  "keywords": ["Rubin Observatory","DP1","Gaia DR3","47 Tuc","astrometry","bootstrap"],
+  "keywords": [
+    "Rubin Observatory",
+    "DP1",
+    "Gaia DR3",
+    "47 Tuc",
+    "astrometry",
+    "bootstrap"
+  ],
   "access_right": "open",
   "related_identifiers": [
     {
@@ -14,5 +25,8 @@
       "relation": "isSupplementTo"
     }
   ],
-  "notes": "Code MIT; derived data recommended CC-BY-4.0 in deposit."
+  "notes": "Code MIT; derived data recommended CC-BY-4.0 in deposit.",
+  "version": "v1.0.4-rnA",
+  "publication_date": "2025-09-01",
+  "license": "mit"
 }
