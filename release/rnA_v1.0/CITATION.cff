@@ -4,7 +4,6 @@ authors:
   - family-names: "Reyes"
     given-names: "Marcelo"
     affiliation: "Independiente"
-#    orcid: "0000-0000-0000-0000"
 version: "v1.0-rnA"
 date-released: "2025-08-29"
 keywords: ["Rubin Observatory", "DP1", "Gaia DR3", "47 Tuc", "astrometry", "bootstrap"]
