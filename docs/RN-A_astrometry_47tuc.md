@@ -45,6 +45,6 @@ El JSON reproducible queda en `data/47tuc_dp1/rnA_metrics.json`.
 ## Referencias (enlaces)
 - Choi et al. 2025: https://alphaxiv.org/overview/2507.01343v1  
 - Wainer et al. 2025: https://arxiv.org/pdf/2507.03228  
-- Cross match queries: https://dp1.lsst.io/tutorials-dp1/cross-match-queries.html  
-- Monster: https://dp1.lsst.io/data-products-dp1/monster-reference-catalog.html  
-- Astrometric Calibration: https://dp1.lsst.io/data-products-dp1/astrometric-calibration.html
+- Cross match queries: https://dp1.lsst.io/tutorials/notebook/306/notebook-306-3.html  
+- Monster: https://dp1.lsst.io/tutorials/notebook/204/notebook-204-2.html  
+- Astrometric Calibration: https://dp1.lsst.io/tutorials/notebook/204/notebook-204-3.html

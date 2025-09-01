@@ -94,6 +94,6 @@
 ## Trabajo relacionado / referencias
 - Choi et al. 2025 — 47 Tuc in Rubin DP1: https://alphaxiv.org/overview/2507.01343v1  
 - Wainer et al. 2025 — Crowded Field Photometry (DP1, 47 Tuc): https://arxiv.org/pdf/2507.03228  
-- DP1 Tutorials — Cross match queries: https://dp1.lsst.io/tutorials-dp1/cross-match-queries.html  
-- Monster reference catalog (Gaia DR3): https://dp1.lsst.io/data-products-dp1/monster-reference-catalog.html  
-- Astrometric Calibration: https://dp1.lsst.io/data-products-dp1/astrometric-calibration.html
+- DP1 Tutorials — Cross match queries: https://dp1.lsst.io/tutorials/notebook/306/notebook-306-3.html  
+- Monster reference catalog (Gaia DR3): https://dp1.lsst.io/tutorials/notebook/204/notebook-204-2.html  
+- Astrometric Calibration: https://dp1.lsst.io/tutorials/notebook/204/notebook-204-3.html
