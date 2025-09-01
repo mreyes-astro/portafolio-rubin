@@ -1,0 +1,6 @@
+python>=3.10
+pandas>=2.2
+numpy>=1.26
+pyarrow>=14
+matplotlib>=3.7
+nbformat>=5.9
