@@ -8,7 +8,7 @@
       "affiliation": "Independiente"
     }
   ],
-  "description": "Histogram of Rubin×Gaia separations in 47 Tuc (DP1) and P50/P68/P95 with bootstrap CIs. Derived Parquet/JSON, figure and notebook. No raw DP1 images.",
+  "description": "Histogram of Rubin×Gaia separations in 47 Tuc (DP1) and P50/P68/P95 with bootstrap CIs. Derived Parquet/JSON, figure and notebook. No raw DP1 images. Code is MIT-licensed; derived data and figures recommended CC-BY-4.0 (see LICENSE-CC-BY-4.0.txt in the release assets).",
   "keywords": [
     "Rubin Observatory",
     "DP1",
