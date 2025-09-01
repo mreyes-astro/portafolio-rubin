@@ -14,3 +14,6 @@ message: "Please cite this release if you use the code or the derived data."
 #identifiers:
 #  - type: doi
 #    value: "10.5281/zenodo.xxxxxxx"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.17017865"

@@ -119,3 +119,6 @@ Para dudas, *issues* o colaboración:
 - **Cross-match (tutorial):** https://dp1.lsst.io/tutorials/notebook/306/notebook-306-3.html  
 - **Monster Reference Catalog:** https://dp1.lsst.io/tutorials/notebook/204/notebook-204-2.html  
 - **Astrometric calibration (por visita):** https://dp1.lsst.io/tutorials/notebook/204/notebook-204-3.html
+
+## DOI
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17017865.svg)](https://doi.org/10.5281/zenodo.17017865)
