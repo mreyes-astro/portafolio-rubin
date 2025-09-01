@@ -22,6 +22,7 @@
 - `data/47tuc_dp1/rnA_metrics.json`  
   Contiene `{"N_pairs":1113,"P50_arcsec":0.051,"P68_arcsec":0.053,"P95_arcsec":0.116}`
 - `notebooks/47tuc/figs/rnA_hist_sep.png` — Histograma con P50 y P95
+  `1a9a24f629fec73d35a6ae585443ddecd9fdd07c9d6cf752a96a614910b57a6e`
 - `notebooks/47tuc/rnA_astrometry_47tuc.ipynb` — Notebook corto para reproducir figura/métricas
 - `docs/RN-A_astrometry_47tuc.md` — Borrador listo para RNAAS (método y resultados)
 
@@ -40,7 +41,8 @@
 - **N = 1 113** pares válidos (1:1 dentro de 2″).  
 - **P50 = 0.051″**, **P68 = 0.053″**, **P95 = 0.116″**.  
 - Histograma en `notebooks/47tuc/figs/rnA_hist_sep.png`.  
-- Cumple **SRD A22** (≤ 0.25″ en el 95 %) con amplio margen en este campo.
+  `1a9a24f629fec73d35a6ae585443ddecd9fdd07c9d6cf752a96a614910b57a6e`
+- Consistente con los requisitos de astrometría del **SRD** (LPM-17) en este campo.) con amplio margen en este campo.
 
 ---
 
@@ -50,6 +52,7 @@
    - `data/47tuc_dp1/rnA_metrics.json`
 2. Abre y ejecuta `notebooks/47tuc/rnA_astrometry_47tuc.ipynb` (JupyterLab/RSP)  
    → produce `notebooks/47tuc/figs/rnA_hist_sep.png` y re-imprime métricas.  
+  `1a9a24f629fec73d35a6ae585443ddecd9fdd07c9d6cf752a96a614910b57a6e`
 
 *(No requiere acceso a TAP ni al Butler; todo se lee de Parquet/JSON.)*
 
@@ -81,6 +84,7 @@
 - `data/47tuc_dp1/rnA_metrics.json`  
   `808495797b581481e36a45560b96156ab79b27f4d549302058db9c3afb13cb18`
 - `notebooks/47tuc/figs/rnA_hist_sep.png`  
+  `1a9a24f629fec73d35a6ae585443ddecd9fdd07c9d6cf752a96a614910b57a6e`
   `30f228bd223eb8a7e8ebe84895991940bce6dc321059369c08d8088bbcf00c82`
 
 ## Licencias
