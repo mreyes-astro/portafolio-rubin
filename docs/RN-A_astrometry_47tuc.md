@@ -1,6 +1,6 @@
 # Alineación astrométrica DP1 en 47 Tuc (Rubin × Gaia)
 
-**Resumen.** Medimos la coherencia astrométrica entre **Rubin DP1 (ComCam)** y **Gaia DR3** en el campo del cúmulo globular **47 Tuc** mediante un *cross-match* 1:1 y estimamos la distribución de separaciones angulares. Obtenemos **N ≈ 1 113** pares emparejados, con **P50 = 0.051″** y **P95 = 0.116″**, cumpliendo holgadamente el requisito **SRD A22** (≤ 0.25″ en el 95 %).
+**Resumen.** Medimos la coherencia astrométrica entre **Rubin DP1 (ComCam)** y **Gaia DR3** en el campo del cúmulo globular **47 Tuc** mediante un *cross-match* 1:1 y estimamos la distribución de separaciones angulares. Obtenemos **N ≈ 1 113** pares emparejados, con **P50 = 0.051″** y **P95 = 0.116″**, consistente con los requisitos de astrometría del **SRD** (LPM-17).
 
 **Método (1 párrafo).** Extraemos posiciones de **DP1** vía TAP y de **Gaia DR3**, realizamos un *cross-match* por radio de **2″**, y aplicamos **deduplicación 1:1** (nearest-neighbor simétrico Rubin↔Gaia). Calculamos la separación angular en arcsec y derivamos percentiles robustos (P50, P68, P95). Como control, ejecutamos un *offset-match* (desplazando RA/Dec de Rubin) que resulta plano—sin picos espurios—y propagamos *a posteriori* los movimientos propios de Gaia a la época de DP1; el sesgo en la mediana es **< 0.02″**.
 
@@ -28,3 +28,7 @@ El JSON reproducible queda en `data/47tuc_dp1/rnA_metrics.json`.
 **Control de emparejamientos espurios.** Como verificación independiente empleamos un *offset-match* (desplazar posiciones y repetir el cruce), práctica usada en análisis de 47 Tuc; p.ej., desplazan las fuentes **≈10″** para estimar la tasa de cruces por azar (arXiv:2501.04446). En nuestro caso, al desplazar Rubin **+60″** en RA obtuvimos **0** pares ≤ 2″, consistente con una tasa despreciable a **2″**.
 
 **Cruces alternativos.** Existen enfoques Bayesianos multibanda para *cross-match* (p.ej., métodos del estilo de arXiv:1807.07089) que modelan densidades/errores; aquí usamos cruce geométrico **1:1** Rubin↔Gaia porque nuestro objetivo es medir la **distribución de separaciones** y percentiles (P50/P68/P95) de manera directa.
+
+
+## Referencias
+- Ivezić, Ž., & the LSST Science Collaboration (2018). *The LSST System Science Requirements Document (LPM-17).* GitHub: https://github.com/lsst-pst/LPM-17

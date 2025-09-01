@@ -86,3 +86,7 @@
 ## Licencias
 - **Código y notebooks**: MIT (véase LICENSE).
 - **Datos derivados y figuras de RN-A**: CC-BY-4.0 (citar a Marcelo Reyes; reconocer Rubin DP1/RSP y Gaia DR3).
+
+
+## Referencias
+- Ivezić, Ž., & the LSST Science Collaboration (2018). *The LSST System Science Requirements Document (LPM-17).* GitHub: https://github.com/lsst-pst/LPM-17
