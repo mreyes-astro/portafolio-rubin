@@ -15,7 +15,7 @@
 - `data/47tuc_dp1/rnA_matched_minimal.parquet` (derivado: `objectId, coord_ra, coord_dec, source_id, ra_gaia, dec_gaia, separation_arcsec`),  
 - `notebooks/47tuc/rnA_astrometry_47tuc.ipynb` (reproduce la figura y métricas).  
 
-**DOI (Zenodo):** `TBD` — se actualizará en el envío a RNAAS.
+**DOI (Zenodo):** 10.5281/zenodo.17017865 (Concept DOI: 10.5281/zenodo.17017864).
 
 **Agradecimientos.** Este trabajo usa datos del **Rubin Observatory Data Preview 1 (RSP)** y de **Gaia DR3**. Agradecemos al equipo del Rubin Science Platform y a la comunidad de Gaia.
 
