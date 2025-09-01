@@ -4,7 +4,6 @@ authors:
   - family-names: "Reyes"
     given-names: "Marcelo"
     affiliation: "Independiente"
-# Reemplaza por tu ORCID real si lo tienes:
 #    orcid: "0000-0000-0000-0000"
 version: "v1.0-rnA"
 date-released: "2025-08-29"
