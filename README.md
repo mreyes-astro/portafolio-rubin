@@ -114,3 +114,8 @@ Para dudas, *issues* o colaboración:
 
 ¡Pull requests y sugerencias son bienvenidos!
 
+
+## Recursos DP1
+- **Cross-match (tutorial):** https://dp1.lsst.io/tutorials/notebook/306/notebook-306-3.html  
+- **Monster Reference Catalog:** https://dp1.lsst.io/tutorials/notebook/204/notebook-204-2.html  
+- **Astrometric calibration (por visita):** https://dp1.lsst.io/tutorials/notebook/204/notebook-204-3.html
