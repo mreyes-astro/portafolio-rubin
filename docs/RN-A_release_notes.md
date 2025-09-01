@@ -73,3 +73,16 @@
 ## Cambios (changelog)
 - **v1.0-rnA (2025-08-29)**: primera liberación — parquet mínimo, métricas JSON, figura y notebook RN-A.
 
+
+## Integridad (SHA256)
+
+- `data/47tuc_dp1/rnA_matched_minimal.parquet`  
+  `a1075b24066818444627ad100a822874a2064eb16eae3ac7c27765e5477faf86`
+- `data/47tuc_dp1/rnA_metrics.json`  
+  `808495797b581481e36a45560b96156ab79b27f4d549302058db9c3afb13cb18`
+- `notebooks/47tuc/figs/rnA_hist_sep.png`  
+  `30f228bd223eb8a7e8ebe84895991940bce6dc321059369c08d8088bbcf00c82`
+
+## Licencias
+- **Código y notebooks**: MIT (véase LICENSE).
+- **Datos derivados y figuras de RN-A**: CC-BY-4.0 (citar a Marcelo Reyes; reconocer Rubin DP1/RSP y Gaia DR3).
