@@ -2,5 +2,16 @@
   "N_pairs": 1113,
   "P50_arcsec": 0.051,
   "P68_arcsec": 0.053,
-  "P95_arcsec": 0.116
+  "P95_arcsec": 0.116,
+  "P50_ci95_arcsec": [
+    0.050690864503642435,
+    0.051430916269940744
+  ],
+  "P95_ci95_arcsec": [
+    0.0986885881552607,
+    0.17069029791484716
+  ],
+  "bootstrap_B": 5000,
+  "bootstrap_seed": 47,
+  "method_note": "1:1 dentro de 2\u2033; percentiles sobre separaciones; IC-95% por bootstrap."
 }

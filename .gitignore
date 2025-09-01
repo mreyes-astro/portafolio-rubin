@@ -17,3 +17,7 @@ notebooks/47tuc/data/
 notebooks/47tuc/cache/
 # Evitar data temporaria debajo de notebooks (la canónica vive en data/47tuc_dp1/)
 notebooks/47tuc/data/
+
+# build artifacts
+main
+v1.0-rnA
