@@ -63,7 +63,7 @@
 ---
 
 ## Citar
-- **Zenodo DOI:** _TBD_ (se actualizará al publicar el depósito)  
+- **Zenodo DOI:** 10.5281/zenodo.17017865
 - **Release GitHub:** `v1.0-rnA`  
 - **Licencia código/docs:** MIT (archivo `LICENSE`)  
 - **Licencia datos derivados:** CC-BY-4.0 recomendada en Zenodo
