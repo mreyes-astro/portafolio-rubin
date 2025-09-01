@@ -22,3 +22,9 @@
 **Métricas (JSON).**  
 N = 1 113; P50 = 0.051″; **P68 = 0.053″**; P95 = 0.116″.  
 El JSON reproducible queda en `data/47tuc_dp1/rnA_metrics.json`.
+
+## Trabajo relacionado / control
+
+**Control de emparejamientos espurios.** Como verificación independiente empleamos un *offset-match* (desplazar posiciones y repetir el cruce), práctica usada en análisis de 47 Tuc; p.ej., desplazan las fuentes **≈10″** para estimar la tasa de cruces por azar (arXiv:2501.04446). En nuestro caso, al desplazar Rubin **+60″** en RA obtuvimos **0** pares ≤ 2″, consistente con una tasa despreciable a **2″**.
+
+**Cruces alternativos.** Existen enfoques Bayesianos multibanda para *cross-match* (p.ej., métodos del estilo de arXiv:1807.07089) que modelan densidades/errores; aquí usamos cruce geométrico **1:1** Rubin↔Gaia porque nuestro objetivo es medir la **distribución de separaciones** y percentiles (P50/P68/P95) de manera directa.
