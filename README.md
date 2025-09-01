@@ -1,127 +1,110 @@
-# Portafolio Rubin 🔭
+# Portafolio Rubin 🔭
 
-&#x20;
+Repositorio personal para experimentos y proyectos basados en los **Data Previews** del [Vera C. Rubin Observatory](https://www.lsst.org/).
 
-Repositorio personal para experimentos y proyectos basados en los **Data Previews** del [Vera C. Rubin Observatory](https://www.lsst.org/):
+[![DOI (versión)](https://zenodo.org/badge/DOI/10.5281/zenodo.17017865.svg)](https://doi.org/10.5281/zenodo.17017865)
+[![DOI (concepto)](https://zenodo.org/badge/DOI/10.5281/zenodo.17017864.svg)](https://doi.org/10.5281/zenodo.17017864)
 
-- **DP0.2** – catálogos simulados (DESC DC2)
-- **DP1**    – datos reales de **ComCam**
-
-El objetivo es construir un **portafolio reproducible** que demuestre destrezas en ciencia de datos astronómicos, pipeline LSST y buenas prácticas DevOps.
-
-> Autor   : **Marcelo Reyes**  ｜ [*mreyesb@gmail.com*](mailto\:mreyesb@gmail.com)\
-> Asistente : **RubinCopilot**\
-> Rama activa : `feature/proj-1_47tuc`
+> Autor: **Marcelo Reyes** · [mreyesb@gmail.com](mailto:mreyesb@gmail.com)
 
 ---
 
-## 1 · Estructura del repositorio
+## Estado (2025-09-01)
+
+- **RN-A (DP1 · 47 Tuc · Astrometría)**: **publicado** como release **v1.0.4-rnA**  
+  DOI de la versión: **10.5281/zenodo.17017865** · Concept DOI: **10.5281/zenodo.17017864**  
+  Incluye parquet mínimo emparejado Rubin×Gaia, métricas (P50/P68/P95 + IC-95% bootstrap), figura e ipynb reproducible.
+
+Próximos:
+- **RN-B (DP1 · 47 Tuc · Fotometría R(g))**: borrador en `docs/RN-B_R_of_g_47tuc.md` (con `data/.../rnB_metrics.json` placeholder).
+- Otros proyectos DP0/DP1: en preparación.
+
+---
+
+## Estructura
 
 ```text
 portafolio-rubin/
 ├─ notebooks/
-│   ├─ 47tuc/                 # Proyecto 1 – 47 Tucanae
-│   │   ├─ dp02_benchmark.ipynb
-│   │   └─ dp1_47tuc_prep.ipynb
-│   └─ README.md             # Guía específica de subproyecto
-├─ queries/                  # Scripts ADQL ( *.sql )
-├─ docs/                     # Diagramas, PDFs de referencia
-├─ data/                     # Salidas Parquet persistentes
-├─ .github/workflows/        # CI ( smoke test Papermill )
-├─ AUDIT_LOG.md              # Bitácora de entorno/ejecuciones
-└─ README.md                 # ← este documento
+│  └─ 47tuc/
+│     ├─ rnA_astrometry_47tuc.ipynb      # Notebook reproducible (RN-A)
+│     ├─ dp1_47tuc_prep.ipynb            # Utilidades/preparación DP1
+│     └─ figs/rnA_hist_sep.png           # Figura RN-A
+├─ data/
+│  └─ 47tuc_dp1/
+│     ├─ rnA_matched_minimal.parquet     # Derivado mínimo (publicado)
+│     └─ rnA_metrics.json                # Métricas + IC-95% (publicado)
+├─ docs/
+│  ├─ RN-A_astrometry_47tuc.md           # Texto RN-A (RNAAS-ready)
+│  ├─ RN-A_release_notes.md              # Notas de release (método, hashes)
+│  └─ RN-B_R_of_g_47tuc.md               # Borrador RN-B
+├─ release/
+│  └─ rnA_v1.0/                          # Paquete listo para Zenodo (v1.0.4-rnA)
+├─ scripts/
+│  └─ rna_bootstrap_ci.py                # Script para IC por bootstrap
+├─ requirements.txt · environment.yml    # Reproducibilidad local
+├─ CITATION.cff · .zenodo.json           # Metadatos de citación / Zenodo
+└─ README.md
 ```
 
 ---
 
-## 2 · Requisitos mínimos
-
-| Herramienta            | Versión recomendada          | Notas                                |
-| ---------------------- | ---------------------------- | ------------------------------------ |
-| Rubin Science Platform | `current` (LSST Stack ≥ v29) | Entorno Jupyter, acceso TAP + Butler |
-| Git + GitHub           | ≥ 2.30                       | Flujo CLI en la terminal RSP         |
-| Conda/Mamba (⟂)        | opcional                     | Para ejecución local                 |
-| Docker (⟂)             | opcional                     | Imágenes reproducibles               |
-
----
-
-## 3 · Uso rápido
+## Reproducibilidad rápida (local)
 
 ```bash
-# 1 · Clona el repo dentro de la RSP
-$ git clone https://github.com/mreyes-astro/portafolio-rubin.git
-$ cd portafolio-rubin
+python -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt
 
-# 2 · Crea tu rama de trabajo
-$ git checkout -b feature/<mi-rama>
-
-# 3 · Abre el notebook de benchmark
-# File ▶ Open ▶ notebooks/47tuc/dp02_benchmark.ipynb
+# Recalcular métricas e IC-95 % desde el parquet derivado
+python scripts/rna_bootstrap_ci.py \
+  --parquet data/47tuc_dp1/rnA_matched_minimal.parquet \
+  --out     data/47tuc_dp1/rnA_metrics.json \
+  --B 5000 --seed 47
 ```
 
-> **Tip CI**: el workflow `notebook-smoke.yml` ejecuta Papermill con `CI_MODE=1` para verificar que cada notebook corre tras un `git clone`.\
-> Consulta `.github/workflows/` si deseas extender las pruebas.
+> Alternativa: los mismos artefactos están en `release/rnA_v1.0/` (idénticos a los de la release GitHub/Zenodo).
 
 ---
 
-## 4 · Mapa de proyectos
+## Resumen científico (RN-A)
 
-| Fase  | Proyecto                                          | Estado 2025‑07‑29 | Tag / Release |
-| ----- | ------------------------------------------------- | ----------------- | ------------- |
-|  1    | **Benchmark DP0.2** – pipeline fotométrico mínimo | ✅ Completado      | `v1.0-dp02`   |
-|  2    | **Validación DP1** – 47 Tuc cross‑match Gaia      | 🚧 En curso       | `v2.x`        |
-|  3    | Clasificador de artefactos en alertas             | ⏳ Pendiente       | —             |
-|  4    | Asteroides Habs – auditoría de magnitudes         | ⏳                 | —             |
-
-Cada hito genera un *release* con DOI Zenodo y snapshot de datos Parquet.
+- **Muestra:** 47 Tuc (DP1, ComCam) × **Gaia DR3**  
+- **Emparejamiento:** radio 2″ + **deduplicación 1:1** simétrica (nearest Rubin↔Gaia)  
+- **Métricas:** **N = 1 113**, **P50 = 0.051″**, **P68 = 0.053″**, **P95 = 0.116″**  
+- **Bootstrap:** B = 5000, seed = 47; IC-95 % para P50 y P95  
+- **Control:** *offset-match* (+60″ en RA) ⇒ **0** pares ≤ 2″ (plano)  
+- **Conclusión:** consistente con los requisitos de astrometría del **SRD** (LPM-17) para este campo.
 
 ---
 
-## 5 · Buenas prácticas adoptadas
+## Recursos DP1 (enlaces vigentes)
 
-- **Estructura notebook estándar** (véase `docs/Notebook Markdown Style Guide`).
-- **Control de versiones de datos** → Parquet inmutable bajo `data/`.
-- **Pruebas CI** → `papermill --kernel LSST` smoke‑test.
-- **AUDIT\_LOG.md** → hash de contenedor + métricas clave por ejecución.
-- **Citación formal** → DPDD LSE‑163, SRD LPM‑17, papers relevantes.
-
----
-
-## 6 · Licencia
-
-Código bajo **MIT**.  Documentación bajo **CC‑BY‑4.0** salvo indicación contraria.
-
----
-
-## 7 · Citar este repositorio
-
-```
-Reyes, M. (2025). Portafolio Rubin — proyectos DP0/DP1 (v1.0-dp02) [Computer software].
-Zenodo. https://doi.org/10.5281/zenodo.1234567
-```
-
-> El DOI se actualizará automáticamente en cada release.
-
----
-
-## 8 · Contacto
-
-Para dudas, *issues* o colaboración:
-
-- **Email** : [mreyesb@gmail.com](mailto\:mreyesb@gmail.com)
-- **GitHub**: [@mreyes-astro](https://github.com/mreyes-astro)
-- **Slack**  : `#rubin-dp0-es` / `#stack-club`
-
-¡Pull requests y sugerencias son bienvenidos!
-
-
-## Recursos DP1
 - **Cross-match (tutorial):** https://dp1.lsst.io/tutorials/notebook/306/notebook-306-3.html  
 - **Monster Reference Catalog:** https://dp1.lsst.io/tutorials/notebook/204/notebook-204-2.html  
-- **Astrometric calibration (por visita):** https://dp1.lsst.io/tutorials/notebook/204/notebook-204-3.html
+- **Astrometric calibration (visita):** https://dp1.lsst.io/tutorials/notebook/204/notebook-204-3.html
 
-## DOI
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17017865.svg)](https://doi.org/10.5281/zenodo.17017865)
+---
 
-### Concept DOI (todas las versiones)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17017864.svg)](https://doi.org/10.5281/zenodo.17017864)
+## Buenas prácticas
+
+- Derivados **inmutables** (Parquet/JSON) con **SHA256** en notas de release.
+- **CITATION.cff** + badges DOI (versión y concepto).
+- **Licenciamiento dual**: código MIT; datos/figuras derivados recomendados **CC-BY-4.0** en el paquete de release/Zenodo.
+- Scripts/notebooks con **semilla** fijada y parámetros documentados (bootstrap).
+
+---
+
+## Citar
+
+Reyes, M. (2025). **RN-A — Astrometry in 47 Tuc with Rubin DP1 (ComCam)** (v1.0.4-rnA). Zenodo. https://doi.org/10.5281/zenodo.17017865  
+> Para citar “todas las versiones” usa el Concept DOI: https://doi.org/10.5281/zenodo.17017864
+
+---
+
+## Contacto
+
+- **Email**: [mreyesb@gmail.com](mailto:mreyesb@gmail.com)  
+- **GitHub**: [@mreyes-astro](https://github.com/mreyes-astro)
+
+¡Pull requests y sugerencias son bienvenidos!
+
