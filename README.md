@@ -122,3 +122,6 @@ Para dudas, *issues* o colaboración:
 
 ## DOI
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17017865.svg)](https://doi.org/10.5281/zenodo.17017865)
+
+### Concept DOI (todas las versiones)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17017864.svg)](https://doi.org/10.5281/zenodo.17017864)
