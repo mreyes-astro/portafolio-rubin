@@ -9,7 +9,7 @@
 - **Métricas:** **N = 1 113**, **P50 = 0.051″**, **P68 = 0.053″**, **P95 = 0.116″**  
 **Bootstrap:** B=5000, seed=47; IC-95% para P50 y P95.
 - **Control:** *offset-match* (Rubin desplazado +60″ en RA) ⇒ **0** pares ≤ 2″ (plano)  
-- **Conclusión:** cumple holgadamente **SRD A22** (≤ 0.25″ en el 95 %)
+- **Conclusión:** consistente con los requisitos de astrometría del **SRD** (LPM-17)
 ---
 ## Artefactos (derivados)
 > Solo productos derivados. **No** se incluyen imágenes crudas de DP1.
