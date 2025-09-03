@@ -9,7 +9,7 @@
 - **Emparejamiento:** radio 2″ + deduplicación **1:1 simétrica** (nearest Rubin↔Gaia)  
 - **Métricas:** **N = 1 113**, **P50 = 0.051″**, **P68 = 0.053″**, **P95 = 0.116″**  
 - **Control:** *offset-match* (Rubin desplazado +60″ en RA) ⇒ **0** pares ≤ 2″ (plano)  
-- **Conclusión:** consistente con los requisitos de astrometría del **SRD** (LPM-17)
+- **Conclusión:** Reportamos percentiles radiales y el **RMS por coordenada** (Δα⋆, Δδ) con IC-95 %. Dado que el SRD (LPM-17) está definido por coordenada, **no realizamos una verificación directa de cumplimiento** aquí; proveemos estos números como referencia cuantitativa.
 
 ---
 

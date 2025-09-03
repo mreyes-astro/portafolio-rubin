@@ -1,6 +1,6 @@
 # Alineación astrométrica DP1 en 47 Tuc (Rubin × Gaia)
 
-**Resumen.** Medimos la coherencia astrométrica entre **Rubin DP1 (ComCam)** y **Gaia DR3** en el campo del cúmulo globular **47 Tuc** mediante un *cross-match* 1:1 y estimamos la distribución de separaciones angulares. Obtenemos **N ≈ 1 113** pares emparejados, con **P50 = 0.051″** y **P95 = 0.116″**, consistente con los requisitos de astrometría del **SRD** (LPM-17).
+**Resumen.** Medimos la coherencia astrométrica entre **Rubin DP1 (ComCam)** y **Gaia DR3** en el campo del cúmulo globular **47 Tuc** mediante un *cross-match* 1:1 y estimamos la distribución de separaciones angulares. Obtenemos **N ≈ 1 113** pares emparejados, con **P50 = 0.051″** y **P95 = 0.116″**, Reportamos percentiles radiales y el **RMS por coordenada** (Δα⋆, Δδ) con IC-95 %. Dado que el SRD (LPM-17) está definido por coordenada, **no realizamos una verificación directa de cumplimiento** aquí; proveemos estos números como referencia cuantitativa..
 
 **Alcance.** Presentamos un control astrométrico reproducible (Rubin×Gaia en 47 Tuc, DP1): distribución de separaciones 1:1 y percentiles (P50/P68/P95) con IC-95% por bootstrap, y prueba de *offset-match*. A nuestro saber, estos números no se reportan explícitamente en análisis DP1 previos de 47 Tuc; se ofrecen como referencia práctica para la comunidad.
 
