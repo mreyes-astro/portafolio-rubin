@@ -9,7 +9,7 @@ Repositorio personal para experimentos y proyectos basados en los **Data Preview
 
 ---
 
-## Estado (2025-09-01)
+## Estado (2025-09-02)
 
 - **RN-A (DP1 · 47 Tuc · Astrometría)**: **publicado** como release **v1.0.4-rnA**  
   DOI de la versión: **10.5281/zenodo.17017865** · Concept DOI: **10.5281/zenodo.17017864**  
@@ -27,6 +27,9 @@ Próximos:
 portafolio-rubin/
 ├─ notebooks/
 │  └─ 47tuc/
+│     ├─ rnA_per_coordinate_metrics.ipynb  # RMS por coordenada (+ CIs, P68 CI)
+│     ├─ rnA_radius_robustness.ipynb       # Robustez vs radio (0.4–2.0″)
+│     ├─ rnA_outliers_analysis.ipynb       # CSV > P95 (cola)
 │     ├─ rnA_astrometry_47tuc.ipynb      # Notebook reproducible (RN-A)
 │     ├─ dp1_47tuc_prep.ipynb            # Utilidades/preparación DP1
 │     └─ figs/rnA_hist_sep.png           # Figura RN-A
@@ -76,6 +79,13 @@ python scripts/rna_bootstrap_ci.py \
 - **Conclusión:** Reportamos percentiles radiales y el RMS por coordenada (Δα⋆, Δδ) con IC-95 %. Dado que el SRD (LPM-17) está definido por coordenada, no realizamos una verificación directa de cumplimiento aquí; proveemos estos números como referencia cuantitativa para este campo.
 
 ---
+
+**Resumen cuantitativo (47 Tuc, DP1·ComCam, N=1113):**  
+P50 = 0.0510″ [0.0507, 0.0514]; P68 = 0.0533″ [0.0530, 0.0538]; P95 = 0.1158″ [0.0978, 0.1707].  
+RMS(Δα⋆) ≈ 131 mas [97.7, 162.3]; RMS(Δδ) ≈ 147 mas [104.3, 185.4].  
+P50 ≈ 0.25 px a 0.2″/px (ComCam).  
+Submuestras por radio r∈{0.4, 0.8, 1.0, 1.2, 1.5, 2.0}″: P50/P68 estables; P95 crece con r (cola).
+
 
 ## Recursos DP1 (enlaces vigentes)
 
