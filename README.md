@@ -86,6 +86,8 @@ RMS(Δα⋆) ≈ 131 mas [97.7, 162.3]; RMS(Δδ) ≈ 147 mas [104.3, 185.4].
 P50 ≈ 0.25 px a 0.2″/px (ComCam).  
 Submuestras por radio r∈{0.4, 0.8, 1.0, 1.2, 1.5, 2.0}″: P50/P68 estables; P95 crece con r (cola).
 
+**Manuscrito (EN, v8):** `docs/RN-A_en/Reyes_2025_RubinDP1_47Tuc_RN-A_v8_EN.pdf`
+
 
 ## Recursos DP1 (enlaces vigentes)
 
