@@ -118,7 +118,7 @@ Coincide a precisión de máquina con el parquet publicado.
 ---
 
 
-**Manuscrito (EN, v8):** `docs/RN-A_en/Reyes_2025_RubinDP1_47Tuc_RN-A_v8_EN.pdf`
+**Manuscrito (EN, v9):** `docs/RN-A_en/Reyes_2025_RubinDP1_47Tuc_RN-A_v9_EN.pdf`
 
 
 ## Recursos DP1 (enlaces vigentes)
