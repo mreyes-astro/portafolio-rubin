@@ -89,31 +89,25 @@ Submuestras por radio r∈{0.4, 0.8, 1.0, 1.2, 1.5, 2.0}″: P50/P68 estables; P
 
 ## Cola y robustez (sanity)
 
-**Identidad en el plano (sanity):**
+- **Identidad (sanity):** `mean(r^2) = mean((Δα⋆)^2) + mean((Δδ)^2)` — coincide a precisión de máquina con el parquet publicado.
 
-$$\overline{r^2}=\overline{(\Delta\alpha_\star)^2}+\overline{(\Delta\delta)^2}$$
+- **Descomposición núcleo/cola en el cuantil radial q95:**
+  - `q95 = 0.11583″` (≈ `0.116″`)
+  - `n_core = 1057`, `n_tail = 56` ⇒ `w_core = 1057/1113 ≈ 0.9497`
+  - `E[r^2]_core = 0.002439 arcsec^2`
+  - `E[r^2]_tail = 0.723691 arcsec^2`
+  - **Mezcla:** `w_core·E[r^2]_core + (1−w_core)·E[r^2]_tail ≈ 0.03873 arcsec^2 ≃ mean(r^2)`
 
-Coincide a precisión de máquina con el parquet publicado.
+- **Métricas robustas (recorte 1% por r, q01–q99):**
+  - `RMS_trim,1% (Δα⋆) = 78.27 mas`
+  - `RMS_trim,1% (Δδ)  = 58.57 mas`
 
-**Descomposición núcleo/cola en el cuantil radial** $q_{95}$:
+**Lectura correcta.** La cola (~5% de los pares) es pequeña pero muy pesada en `r^2`. Esto explica que el **RMS clásico por eje (131–147 mas)** supere los percentiles del núcleo (P50/P68 ≈ `0.051/0.053″`). La **curva de influencia** (RMS vs fracción incluida por cuantil de `r`) es plana hasta ~0.95 y se eleva al añadir el 5% final.
 
-- $q_{95}=0.11583\,\text{arcsec}$ (≈ $0.116\,\text{arcsec}$)
-- $n_{\text{core}}=1057$, $n_{\text{tail}}=56$, peso del núcleo $w_{\text{core}}=1057/1113\approx 0.9497$
-- $\mathbb{E}[r^2]_{\text{core}}=0.002439\,\text{arcsec}^2$
-- $\mathbb{E}[r^2]_{\text{tail}}=0.723691\,\text{arcsec}^2$
-- **Mezcla:** $w_{\text{core}}\,\mathbb{E}[r^2]_{\text{core}}+(1-w_{\text{core}})\,\mathbb{E}[r^2]_{\text{tail}}\approx 0.03873\,\text{arcsec}^2\simeq\overline{r^2}$
-
-**Métricas robustas (recorte 1% por $r$, q01–q99)** — *complementarias* al RMS clásico:
-
-- $\mathrm{RMS}_{\text{trim},1\%}(\Delta\alpha_\star)=78.27\,\text{mas}$
-- $\mathrm{RMS}_{\text{trim},1\%}(\Delta\delta)=58.57\,\text{mas}$
-
-**Lectura correcta.** La cola (~5% de los pares) es pequeña pero **muy pesada en** $r^2$. Esto **explica** que el RMS clásico por eje (~131–147 mas) **supere** los percentiles del núcleo (P50/P68 ≈ 0.051/0.053 arcsec). La **curva de influencia** (RMS vs. fracción incluida por cuantil de $r$) es plana hasta ~0.95 y se eleva al añadir el 5% final.
-
-**Artefactos añadidos (rutas relativas del repo):**
-- [`data/47tuc_dp1/rnA_influence_curve.csv`](data/47tuc_dp1/rnA_influence_curve.csv) — tabla de la **curva de influencia** (RMS vs fracción incluida).
-- [`notebooks/47tuc/figs/rnA_influence_curve.png`](notebooks/47tuc/figs/rnA_influence_curve.png) — figura de la **curva de influencia**.
-- [`notebooks/47tuc/rnA_r2_sanity_and_influence.ipynb`](notebooks/47tuc/rnA_r2_sanity_and_influence.ipynb) — notebook que genera la identidad de sanidad, la descomposición core/tail, los RMS robustos y la figura.
+**Artefactos añadidos (repo):**
+- `data/47tuc_dp1/rnA_influence_curve.csv` — tabla de la curva de influencia (RMS vs fracción incluida).
+- `notebooks/47tuc/figs/rnA_influence_curve.png` — figura de la curva de influencia.
+- `notebooks/47tuc/rnA_r2_sanity_and_influence.ipynb` — notebook: identidad de `mean(r^2)`, core/tail, RMS 1% y figura.
 
 ---
 
