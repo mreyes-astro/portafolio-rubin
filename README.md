@@ -86,6 +86,38 @@ RMS(Δα⋆) ≈ 131 mas [97.7, 162.3]; RMS(Δδ) ≈ 147 mas [104.3, 185.4].
 P50 ≈ 0.25 px a 0.2″/px (ComCam).  
 Submuestras por radio r∈{0.4, 0.8, 1.0, 1.2, 1.5, 2.0}″: P50/P68 estables; P95 crece con r (cola).
 
+
+## Cola y robustez (sanity)
+
+**Identidad en el plano (sanity):**
+
+$$\overline{r^2}=\overline{(\Delta\alpha_\star)^2}+\overline{(\Delta\delta)^2}$$
+
+Coincide a precisión de máquina con el parquet publicado.
+
+**Descomposición núcleo/cola en el cuantil radial** $q_{95}$:
+
+- $q_{95}=0.11583\,\text{arcsec}$ (≈ $0.116\,\text{arcsec}$)
+- $n_{\text{core}}=1057$, $n_{\text{tail}}=56$, peso del núcleo $w_{\text{core}}=1057/1113\approx 0.9497$
+- $\mathbb{E}[r^2]_{\text{core}}=0.002439\,\text{arcsec}^2$
+- $\mathbb{E}[r^2]_{\text{tail}}=0.723691\,\text{arcsec}^2$
+- **Mezcla:** $w_{\text{core}}\,\mathbb{E}[r^2]_{\text{core}}+(1-w_{\text{core}})\,\mathbb{E}[r^2]_{\text{tail}}\approx 0.03873\,\text{arcsec}^2\simeq\overline{r^2}$
+
+**Métricas robustas (recorte 1% por $r$, q01–q99)** — *complementarias* al RMS clásico:
+
+- $\mathrm{RMS}_{\text{trim},1\%}(\Delta\alpha_\star)=78.27\,\text{mas}$
+- $\mathrm{RMS}_{\text{trim},1\%}(\Delta\delta)=58.57\,\text{mas}$
+
+**Lectura correcta.** La cola (~5% de los pares) es pequeña pero **muy pesada en** $r^2$. Esto **explica** que el RMS clásico por eje (~131–147 mas) **supere** los percentiles del núcleo (P50/P68 ≈ 0.051/0.053 arcsec). La **curva de influencia** (RMS vs. fracción incluida por cuantil de $r$) es plana hasta ~0.95 y se eleva al añadir el 5% final.
+
+**Artefactos añadidos (rutas relativas del repo):**
+- [`data/47tuc_dp1/rnA_influence_curve.csv`](data/47tuc_dp1/rnA_influence_curve.csv) — tabla de la **curva de influencia** (RMS vs fracción incluida).
+- [`notebooks/47tuc/figs/rnA_influence_curve.png`](notebooks/47tuc/figs/rnA_influence_curve.png) — figura de la **curva de influencia**.
+- [`notebooks/47tuc/rnA_r2_sanity_and_influence.ipynb`](notebooks/47tuc/rnA_r2_sanity_and_influence.ipynb) — notebook que genera la identidad de sanidad, la descomposición core/tail, los RMS robustos y la figura.
+
+---
+
+
 **Manuscrito (EN, v8):** `docs/RN-A_en/Reyes_2025_RubinDP1_47Tuc_RN-A_v8_EN.pdf`
 
 
