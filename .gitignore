@@ -21,3 +21,9 @@ notebooks/47tuc/data/
 # build artifacts
 main
 v1.0-rnA
+
+# Editor/backup files
+*.swp
+*~
+*.bak*
+.ipynb_checkpoints/
