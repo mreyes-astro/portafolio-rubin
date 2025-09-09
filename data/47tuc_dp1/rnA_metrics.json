@@ -1,8 +1,8 @@
 {
   "N_pairs": 1113,
-  "P50_arcsec": 0.050969643129182965,
-  "P68_arcsec": 0.05332470894897676,
-  "P95_arcsec": 0.11584190795115097,
+  "P50_arcsec": 0.051022827161944,
+  "P68_arcsec": 0.053353692802722556,
+  "P95_arcsec": 0.11583075491800637,
   "P50_ci95_arcsec": [
     0.050690864503642435,
     0.051430916269940744
@@ -17,7 +17,11 @@
   "units": "arcsec",
   "generator": {
     "script": "notebooks/47tuc/rnA_per_coordinate_metrics.ipynb",
-    "version": "v1.1-rnA"
+    "version": "v1.1-rnA",
+    "rna_r2_sanity_notebook": {
+      "notebook": "notebooks/47tuc/rnA_r2_sanity_and_influence.ipynb",
+      "version": "v1.0"
+    }
   },
   "P68_ci95_arcsec": [
     0.05296920692603931,
@@ -77,5 +81,18 @@
       0.10818277279152752,
       0.11584190795115097
     ]
+  },
+  "per_coordinate_robust01_mas": {
+    "rms_ra": 78.26910562756059,
+    "rms_dec": 58.566315188991645
+  },
+  "tails_summary": {
+    "quantile_split": 0.95,
+    "r2_core_arcsec2": 0.002439143206214213,
+    "r2_tail_arcsec2": 0.7236911655396993,
+    "r2_mix_arcsec2": 0.03850174432288846,
+    "sanity_mean_r2": 0.03872855313494303,
+    "sanity_mean_dx2_plus_dy2": 0.03872855313494302,
+    "sanity_absdiff": 6.938893903907228e-18
   }
 }
