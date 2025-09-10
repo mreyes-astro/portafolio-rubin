@@ -1,0 +1,3 @@
+Derived data and figures in this package are licensed under CC BY 4.0.
+Full text: https://creativecommons.org/licenses/by/4.0/
+Source code is MIT-licensed (see repository root).
