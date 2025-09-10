@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+title: "RN-A — Astrometry in 47 Tuc with Rubin DP1 (ComCam)"
+authors:
+  - family-names: "Reyes"
+    given-names: "Marcelo"
+    affiliation: "Independiente"
+version: "v1.0-rnA"
+date-released: "2025-08-29"
+keywords: ["Rubin Observatory", "DP1", "Gaia DR3", "47 Tuc", "astrometry", "bootstrap"]
+message: "Please cite this release if you use the code or the derived data."
+# Cuando tengas Zenodo, descomenta y rellena:
+#identifiers:
+#  - type: doi
+#    value: "10.5281/zenodo.xxxxxxx"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.17017865"

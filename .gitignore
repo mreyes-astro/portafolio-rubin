@@ -27,3 +27,7 @@ v1.0-rnA
 *~
 *.bak*
 .ipynb_checkpoints/
+
+# temp & backups
+*.swp
+*.bak-*
