@@ -1,17 +1,21 @@
+# CITATION.cff (root)
 cff-version: 1.2.0
 title: "RN-A — Astrometry in 47 Tuc with Rubin DP1 (ComCam)"
+version: v1.0.5-rnA
+date-released: 2025-09-09
 authors:
-  - family-names: "Reyes"
-    given-names: "Marcelo"
-    affiliation: "Independiente"
-version: "v1.0-rnA"
-date-released: "2025-08-29"
-keywords: ["Rubin Observatory", "DP1", "Gaia DR3", "47 Tuc", "astrometry", "bootstrap"]
-message: "Please cite this release if you use the code or the derived data."
-# Cuando tengas Zenodo, descomenta y rellena:
-#identifiers:
-#  - type: doi
-#    value: "10.5281/zenodo.xxxxxxx"
+  - family-names: Reyes
+    given-names: Marcelo
 identifiers:
   - type: doi
-    value: "10.5281/zenodo.17017865"
+    value: 10.5281/zenodo.17017865  
+  - type: url
+    value: "https://github.com/mreyes-astro/portafolio-rubin/releases/tag/v1.0.5-rnA"
+preferred-citation:
+  type: article
+  title: "Early Astrometric Coherence in 47 Tuc with DP1 (ComCam)"
+  authors:
+    - family-names: Reyes
+      given-names: Marcelo
+  year: 2025
+  notes: "Research Note / technical report; fully reproducible; see release v1.0.5-rnA."
