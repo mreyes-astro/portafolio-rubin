@@ -9,11 +9,17 @@ Repositorio personal para experimentos y proyectos basados en los **Data Preview
 
 ---
 
-## Estado (2025-09-02)
+## Estado (2025-09-09)
 
-- **RN-A (DP1 · 47 Tuc · Astrometría)**: **publicado** como release **v1.0.4-rnA**  
-  DOI de la versión: **10.5281/zenodo.17017865** · Concept DOI: **10.5281/zenodo.17017864**  
-  Incluye parquet mínimo emparejado Rubin×Gaia, métricas (P50/P68/P95 + IC-95% bootstrap), figura e ipynb reproducible.
+**RN-A (DP1 · 47 Tuc · Astrometry)**  
+- **Release actual:** v1.0.5-rnA — corrige el wording SRD de v1.0.4 y añade *sanity r²*, descomposición **core/tail**, **RMS robusto 1%** e **influence curve**.  
+  • GitHub release: https://github.com/mreyes-astro/portafolio-rubin/releases/tag/v1.0.5-rnA  
+  • Paquete reproducible: `release/rnA_v1.0.5/`  
+  • Manuscrito (EN, v9): `docs/RN-A_en/Reyes_2025_RubinDP1_47Tuc_RN-A_v9_EN.pdf`
+
+- **Release anterior:** v1.0.4-rnA — **Erratum**: se retira la frase “consistente con el SRD con amplio margen”.  
+  • Erratum visible en la página de la release v1.0.4.  
+
 
 Próximos:
 - **RN-B (DP1 · 47 Tuc · Fotometría R(g))**: borrador en `docs/RN-B_R_of_g_47tuc.md` (con `data/.../rnB_metrics.json` placeholder).
